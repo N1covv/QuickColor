@@ -457,19 +457,6 @@ section{padding: 7.5rem 0;}
     max-width: 70px;
 }
 
-/* .center-brand .navbar-brand {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0;
-} */
-
 .navbar-brand > img {
     width: 50%;
 }
@@ -1318,7 +1305,7 @@ section{padding: 7.5rem 0;}
 .container-botton{
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 999;
     transition: transform ease 0.3s;
     padding: 2rem;
@@ -1529,9 +1516,8 @@ section{padding: 7.5rem 0;}
 ====================================== */
 
 .contact-sec{
-    background-image: url("../images/contact_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #202020;
+    padding-top: 9rem;
 }
 
 .contact-sec .contact-form input{
@@ -1587,15 +1573,17 @@ section{padding: 7.5rem 0;}
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-}
+    color: white;
+    background-color: rgb(77, 77, 77);
+}s
 
 /*contact details*/
-.contact-sec .contact-background{
+/* .contact-sec .contact-background{
     position: absolute;
     right: 0;
     top: -35px;
     z-index: -1;
-}
+} */
 
 .contact-sec .contact-details{
     font-family: Roboto, sans-serif;
@@ -1677,6 +1665,7 @@ section{padding: 7.5rem 0;}
 }
 .contact{
     padding: 2rem;
+    display: flex;
 }
 .list-contact{
     font-size: 1.5rem;
@@ -1685,7 +1674,122 @@ section{padding: 7.5rem 0;}
     flex-direction: column;
     gap: 1.5rem;
 }
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.contact-sec .contact-box{
+    padding: 20px;
+    background-color: #272727;
+    -webkit-box-shadow: 1px 1px 8px #dddddd;
+    box-shadow: 1px 1px 8px #3b3b3b;
+    border-radius: 10px;
+}
+.contact-sec .contact-box .small-heading{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contact-sec .contact-box .small-text{
+    font-family: 'Roboto' , sans-serif;
+    margin-bottom: 25px;
+}
+.contact-sec .contact-form .my-form{
+    position: relative;
+}
+.contact-sec .contact-form .my-form .form-control{
+    border: 1px solid #cbcbcb;
+}
+.contact-sec .contact-form .my-form input{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.contact-sec .contact-form .my-form input[placeholder]{
+    color: #444444;
+    opacity: .8;
+    font-size: 14px;
+}
+.contact-sec .contact-form .my-form textarea{
+    border-radius: 10px;
+    padding: 20px;
+}
+.contact-sec .contact-form .my-form textarea[placeholder]{
+    color: #444444;
+    opacity: .8;
+    font-size: 14px;
+}
+.display-error{
+    position: absolute;
+    top:-45px;
+    left:15px;
+    right: 15px;
+}
 
+.contact-page .contact-list li:nth-child(2),.contact-page .contact-list li:nth-child(3){
+    display: inline-block;
+}
+.contact-page .contact-list li:nth-child(2){
+    margin-right: 8px;
+}
+.contact-page .contact-list li:nth-child(even){
+    margin-bottom: 0 !important;
+}
+
+
+
+
+/* Contact izquierda */
+
+.contact-sec{
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+.contact-sec .contact-description {
+    padding: 10px 20px 20px 20px;
+}
+.contact-sec .contact-detail .ex-detail{
+    margin-bottom: 15px;
+}
+.ex-detail .heading{
+    font-size: 35px;
+    color: white;
+}
+.contact-sec .contact-detail .small-text{
+    margin-bottom: 40px;
+    width: 95%;
+    color: rgb(0, 0, 0);
+}
+
+.contact-sec .contact-detail .location-details h4{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white;
+}
+.contact-sec .contact-detail .location-details ul{
+    padding-left: 0;
+}
+.contact-sec .contact-detail .location-details ul li{
+    list-style: none;
+    margin-bottom: 12px;
+    position: relative;
+}
+.contact-sec .contact-detail .location-details ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+}
+.contact-sec .contact-detail .location-details ul li i{
+    font-size: 20px;
+    margin-right: 5px;
+    color: #000000;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
 /* ===================================
      Stand Alone
 ====================================== */
@@ -1854,6 +1958,113 @@ section{padding: 7.5rem 0;}
 .company-about{
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
+}
+
+.carousel{
+    margin: 5rem;
+}
+
+.about{
+    padding-top: 125px;
+}
+.about .about-text{
+    font-family: 'Open Sans' , sans-serif;
+    /*width: 500px;*/
+    color: #ffffff;
+}
+.about .main-heading{
+    font-weight: 600;
+    font-size: 2.7rem;
+    font-family: 'Oswald' , sans-serif;
+}
+.about .heading{
+    margin-left: 2px;
+    font-weight: 300;
+}
+.about .sub-heading{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    opacity: .8;
+}
+.services{
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.feature-icon{
+    font-size: 40px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+    margin: 0 auto;
+}
+
+.feature-icon .bg-feature-icon{
+    padding: 13%;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+    border-radius: 30px;
+}
+
+.card-body .card-title{
+    font-family: 'Oswald' , sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+}
+.card-body .card-text{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.card .card-body{
+    padding: 0 30px 20px 30px;
+
+}
+.service-btn{
+    background-color: #f7dcd1 ;
+    border: 2px solid #f7dcd1;
+    color: #b07150;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    padding: 10px 22px;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+}
+.card{
+    cursor: pointer;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+    background-color: #202020;
+}
+.card:hover{
+    background-color: #ffffff;
+    color:#202020;
+}
+.card:hover .feature-icon{
+    color: #202020;
+}
+.card:hover .card-body .card-title{
+    color: #202020;
+}
+.card:hover .bg-feature-icon{
+    background-color: #ffffff;
+}
+.card:hover .feature-icon{
+    color: #202020;
+}
+.card:hover .service-btn{
+    background-color: #b07150;
+    border: 2px solid #b07150;
+    color: #fff;
 }
 
 /* ===================================
@@ -2118,6 +2329,9 @@ section{padding: 7.5rem 0;}
     .standalone {
         padding-bottom: 0;
     }
+    .carousel{
+        margin: 0%;
+    }
 }
 
 @media screen and (max-width:767px){
@@ -2346,5 +2560,8 @@ section{padding: 7.5rem 0;}
     }
     .para_text {
         font-size: 15px;
+    }
+    .carousel{
+        margin: 0%;
     }
 }

@@ -2095,7 +2095,7 @@ s
 .contact-sec .contact-detail .small-text {
     margin-bottom: 40px;
     width: 95%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .contact-sec .contact-detail .location-details h4 {
@@ -2128,7 +2128,7 @@ s
 .contact-sec .contact-detail .location-details ul li i {
     font-size: 20px;
     margin-right: 5px;
-    color: #000000;
+    color: #fff130;
     position: absolute;
     top: 2px;
     left: 0;
@@ -2781,7 +2781,10 @@ s
     }
 
     .carousel {
-        margin: 0%;
+        margin : 0%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
     }
 }
 
@@ -3023,6 +3026,7 @@ s
     .standalone-area {
         display: flex;
         flex-direction: column;
+        gap: 3.5rem;
     }
 
     .standalone-area .gradient-text1 {
@@ -3058,6 +3062,7 @@ s
 
     .standalone-area .heading-text {
         font-size: 30px;
+        margin-top: 2rem;
     }
 
     .standalone-detail .para_text {
@@ -3070,6 +3075,9 @@ s
 
     .carousel {
         margin: 0%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
     }
 }
 
@@ -3104,7 +3112,7 @@ s
 }
 
 .about-section .caption .text {
-    color: #000000;
+    color: #ffffff;
     font-weight: 400;
     text-align: justify;
     padding-right: 25px;

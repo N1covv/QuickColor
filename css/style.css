@@ -3572,4 +3572,6 @@ section {
 .brand-sec .brand-img img{
     width: 60%;
 }
-
+.fab{
+    line-height:2.3 !important
+}
